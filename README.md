@@ -54,8 +54,8 @@ Then, the website will open on **port 80**. But at the beginning, you will need 
 ### Starting the database:
 For the database, you go the ports at the top of your terminal. There will be 3 ports running . Choose **port: 8080** and open it in the webbrowser. This will take you to **phpMyAdmin page** where you will login using the credentials below:
 
-USERNAME	PASSWORD
-user	userpassword
+**USERNAME**: user
+**PASSWORD**: userpassword
 
 From the repository, there is a file named **edoc.sql**.  Download this file by right clicking on it via code spaces and then select download.
 
@@ -66,8 +66,8 @@ As Admin:
 
 **If you want to login  as Admin, here are the details.**
 
-Email Address	Password
-admin@edoc.com    123
+**Email Address**: admin@edoc.com 
+**Password**: 123
 
 
 ### As client: 
