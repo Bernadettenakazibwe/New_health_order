@@ -29,7 +29,7 @@ This is the person booking the appointment. This person might be a patient looki
 With the website, he or she is able to sign up, login, book different sessions with doctors which are added in by the admin, delete, edit or view account details. He can also see all his appointments in ‘My bookings’
 
 
-![Alt text](img/screenshots/2024-07-11.png)
+![Alt text](img/screenshots/2024-07-11 .png)
 
 
 
