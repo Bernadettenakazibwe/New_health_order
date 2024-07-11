@@ -67,9 +67,10 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`docid`, `docemail`, `docname`, `docpassword`, `docnic`, `doctel`, `specialties`) VALUES
-(1, 'doctor@edoc.com', 'Test Doctor', '123', '000000000', '0110000000', 1);
+(1, 'bernadette@edoc.com', 'Test Doctor', '123', '000000000', '0110000000', 1);
 
--- --------------------------------------------------------
+
+
 
 --
 -- Table structure for table `patient`
@@ -92,7 +93,7 @@ CREATE TABLE `patient` (
 
 INSERT INTO `patient` (`pid`, `pemail`, `pname`, `ppassword`, `paddress`, `pnic`, `pdob`, `ptel`) VALUES
 (1, 'patient@edoc.com', 'Test Patient', '123', 'Sri Lanka', '0000000000', '2000-01-01', '0120000000'),
-(2, 'emhashenudara@gmail.com', 'Hashen Udara', '123', 'Sri Lanka', '0110000000', '2022-06-03', '0700000000');
+(2, 'precious@gmail.com', 'Hashen Udara', '123', 'Sri Lanka', '0110000000', '2022-06-03', '0700000000');
 
 -- --------------------------------------------------------
 
