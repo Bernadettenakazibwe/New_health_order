@@ -22,9 +22,11 @@ The website has three main functionalities depending on the user type(admin, hea
 Admin is the person controlling the website, posting the different sessions, adding doctors to the system and keeping track of the data eg different appointments between patients/clients and health advocates.
 The admin logs in with a specific email and password.
 
+![Alt text](New_health_order-NHO-final-/img/screenshots/2024-07-11 (9).png)
+
 #### Client: 
 This is the person booking the appointment. This person might be a patient looking for a medical intervention or any person who wants health advice or education.
-With the website, he or she is able to sign up, login, book different sessions with doctors which are added in by the admin, delete, edit or view account details. He can also see all his appointments in ‘My bookings’.
+With the website, he or she is able to sign up, login, book different sessions with doctors which are added in by the admin, delete, edit or view account details. He can also see all his appointments in ‘My bookings’
 
 
 ![Alt text](img/screenshots/2024-07-11.png)

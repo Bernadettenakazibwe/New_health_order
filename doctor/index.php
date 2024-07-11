@@ -1,3 +1,35 @@
+<?php
+
+//learn from w3schools.com
+
+session_start();
+
+if(isset($_SESSION["user"])){
+    if(($_SESSION["user"])=="" or $_SESSION['usertype']!='d'){
+        header("location: ../login.php");
+        exit();
+    }else{
+        $useremail=$_SESSION["user"];
+    }
+
+}else{
+    header("location: ../login.php");
+}
+
+
+//import database
+include("../connection.php");
+$userrow = $database->query("select * from doctor where docemail='$useremail'");
+$userfetch=$userrow->fetch_assoc();
+$userid= $userfetch["docid"];
+$username=$userfetch["docname"];
+
+
+//echo $userid;
+//echo $username;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,36 +60,7 @@
     
 </head>
 <body>
-    <?php
-
-    //learn from w3schools.com
-
-    session_start();
-
-    if(isset($_SESSION["user"])){
-        if(($_SESSION["user"])=="" or $_SESSION['usertype']!='d'){
-            header("location: ../login.php");
-        }else{
-            $useremail=$_SESSION["user"];
-        }
-
-    }else{
-        header("location: ../login.php");
-    }
-    
-
-    //import database
-    include("../connection.php");
-    $userrow = $database->query("select * from doctor where docemail='$useremail'");
-    $userfetch=$userrow->fetch_assoc();
-    $userid= $userfetch["docid"];
-    $username=$userfetch["docname"];
-
-
-    //echo $userid;
-    //echo $username;
-    
-    ?>
+   
     <div class="container">
         <div class="menu">
             <table class="menu-container" border="0">
@@ -102,11 +105,7 @@
                         <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">My Clients</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-settings">
-                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
-                    </td>
-                </tr>
+                
                 
             </table>
         </div>

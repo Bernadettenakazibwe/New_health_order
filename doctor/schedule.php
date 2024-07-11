@@ -97,8 +97,7 @@ $username=$userfetch["docname"];
                  <td class="menu-btn menu-icon-settings">
                      <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
                  </td>
-             </tr>
-             
+             </tr>             
          </table>
         </div>
         <div class="dash-body">

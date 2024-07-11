@@ -193,24 +193,7 @@
                                 </td>
                             </tr>
                             <tr>
-                            <td style="width: 25%;">
-                                    <a href="?action=view&id=<?php echo $userid ?>" class="non-style-link">
-                                    <div  class="dashboard-items setting-tabs"  style="padding:20px;margin:auto;width:95%;display: flex;">
-                                        <div class="btn-icon-back dashboard-icons-setting " style="background-image: url('../img/icons/view-iceblue.svg');"></div>
-                                        <div>
-                                                <div class="h1-dashboard" >
-                                                    View Account Details
-                                                    
-                                                </div><br>
-                                                <div class="h3-dashboard"  style="font-size: 15px;">
-                                                    View Personal information About Your Account
-                                                </div>
-                                        </div>
-                                                
-                                    </div>
-                                    </a>
-                                </td>
-                                
+                            
                             </tr>
                             <tr>
                                 <td colspan="4">

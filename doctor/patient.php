@@ -1,4 +1,3 @@
-
 <?php
 
 //learn from w3schools.com
@@ -8,6 +7,7 @@ session_start();
 if(isset($_SESSION["user"])){
     if(($_SESSION["user"])=="" or $_SESSION['usertype']!='d'){
         header("location: ../login.php");
+        exit();
     }else{
         $useremail=$_SESSION["user"];
     }
@@ -27,6 +27,7 @@ $username=$userfetch["docname"];
 
 //echo $userid;
 //echo $username;
+
 ?>
 
 
