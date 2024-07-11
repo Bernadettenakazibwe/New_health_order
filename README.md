@@ -27,7 +27,7 @@ This is the person booking the appointment. This person might be a patient looki
 With the website, he or she is able to sign up, login, book different sessions with doctors which are added in by the admin, delete, edit or view account details. He can also see all his appointments in ‘My bookings’.
 
 
-![Alt text](New_health_order-NHO-final-/img/screenshots/2024-07-11.png)
+![Alt text](img/screenshots/2024-07-11.png)
 
 
 
@@ -38,7 +38,7 @@ He can use the website to login into his account using the account details provi
 
 The Health Advocate can be health personnel eg doctor, nurse, laboratory technician or health educators.
 
-![Alt text](New_health_order-NHO-final-/img/screenshots/2024-07-11 (4).png)
+![Alt text](<img/screenshots/2024-07-11 (4).png>)
 
 
 ## Usage of the website:
