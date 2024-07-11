@@ -31,7 +31,7 @@ With the website, he or she is able to sign up, login, book different sessions w
 
 
 
-![Alt text](New_health_order-NHO-final-/img/screenshots/2024-07-11 (5).png)
+![Alt text](<img/screenshots/2024-07-11 (5).png>)
 
 #### Heath Advocate:
 He can use the website to login into his account using the account details provided by the admin. He can view his patients, appointments, cancel different sessions and appointments.
