@@ -4,7 +4,7 @@
 
 The New Health Order focuses on preventive healthcare measures in Ghana.The health system in Ghana prioritizes acute treatments, neglecting preventive measures.This intervention aims to make early detection of infectious diseases and promote sustainable health habits accessible. Many youths and some gadults or old people are suffering from various infectious diseases which they fear to talk about with other people. They fear to be seen in hospitals because they find it shameful to have these diseases like HIV, Hepatitis B. With New Health Order, these people are able to receive medical attention and health education from any where as lon as they make an appointment with the health personnel or advocates via New Health Order website.
 
-# Development of Ne Health Order website.
+# Development of New Health Order website.
 
 We developed New Health Order website with aim to enable patients book the medical sessions that we put there. Since, we are currently making the project without focusing on making profits but to improve health, and the fact that medical personnel are few in Ghana, we decided that we schedule the appointments according to the availability of the health advocates working together with New Health Order. 
 
