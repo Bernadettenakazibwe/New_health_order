@@ -1,11 +1,14 @@
-
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
+--
 -- Database: `edoc`
 --
 
@@ -25,11 +28,13 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`aemail`, `apassword`) VALUES
-('admin@newhealthorder.com', '123');
+('admin@edoc.com', '123');
 
+-- --------------------------------------------------------
 
+--
 -- Table structure for table `appointment`
-
+--
 
 CREATE TABLE `appointment` (
   `appoid` int(11) NOT NULL,
@@ -41,11 +46,11 @@ CREATE TABLE `appointment` (
   `price` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+-- --------------------------------------------------------
 
-
-
+--
 -- Table structure for table `doctor`
-
+--
 
 CREATE TABLE `doctor` (
   `docid` int(11) NOT NULL,
@@ -57,10 +62,18 @@ CREATE TABLE `doctor` (
   `specialties` int(2) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `doctor`
+--
 
+INSERT INTO `doctor` (`docid`, `docemail`, `docname`, `docpassword`, `docnic`, `doctel`, `specialties`) VALUES
+(1, 'doctor@edoc.com', 'Test Doctor', '123', '000000000', '0110000000', 1);
 
+-- --------------------------------------------------------
 
+--
 -- Table structure for table `patient`
+--
 
 CREATE TABLE `patient` (
   `pid` int(11) NOT NULL,
@@ -73,9 +86,19 @@ CREATE TABLE `patient` (
   `ptel` varchar(15) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `patient`
+--
 
+INSERT INTO `patient` (`pid`, `pemail`, `pname`, `ppassword`, `paddress`, `pnic`, `pdob`, `ptel`) VALUES
+(1, 'patient@edoc.com', 'Test Patient', '123', 'Sri Lanka', '0000000000', '2000-01-01', '0120000000'),
+(2, 'emhashenudara@gmail.com', 'Hashen Udara', '123', 'Sri Lanka', '0110000000', '2022-06-03', '0700000000');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `schedule`
-
+--
 
 CREATE TABLE `schedule` (
   `scheduleid` int(11) NOT NULL,
@@ -101,31 +124,63 @@ CREATE TABLE `specialties` (
 -- Dumping data for table `specialties`
 --
 
-INSERT INTO `speAccidcialties` (`id`, `sname`) VALUES
-
-(1, 'Allergology'),
-
-(2, 'Biological hematology'),
-(3, 'Cardiology'),
-(4, 'Child psychiatry'),
-(5, 'Gastroenterology'),
-(6, 'General hematology'),
-(7, 'General Practice'),
-(8, 'Immunology'),
-(9, 'Infectious diseases'),
-(10, 'Internal medicine'),
-(11, 'Laboratory medicine'),
-(12, 'Microbiology'),
-
-(13, 'Neuro-psychiatry'),
-(14, 'Paediatrics'),
-(15, 'Pathology'),
-
-(16, 'Psychiatry'),
-(17, 'Public health and Preventive Medicine'),
-
-(18, 'Urology'),
-
+INSERT INTO `specialties` (`id`, `sname`) VALUES
+(1, 'Accident and emergency medicine'),
+(2, 'Allergology'),
+(3, 'Anaesthetics'),
+(4, 'Biological hematology'),
+(5, 'Cardiology'),
+(6, 'Child psychiatry'),
+(7, 'Clinical biology'),
+(8, 'Clinical chemistry'),
+(9, 'Clinical neurophysiology'),
+(10, 'Clinical radiology'),
+(11, 'Dental, oral and maxillo-facial surgery'),
+(12, 'Dermato-venerology'),
+(13, 'Dermatology'),
+(14, 'Endocrinology'),
+(15, 'Gastro-enterologic surgery'),
+(16, 'Gastroenterology'),
+(17, 'General hematology'),
+(18, 'General Practice'),
+(19, 'General surgery'),
+(20, 'Geriatrics'),
+(21, 'Immunology'),
+(22, 'Infectious diseases'),
+(23, 'Internal medicine'),
+(24, 'Laboratory medicine'),
+(25, 'Maxillo-facial surgery'),
+(26, 'Microbiology'),
+(27, 'Nephrology'),
+(28, 'Neuro-psychiatry'),
+(29, 'Neurology'),
+(30, 'Neurosurgery'),
+(31, 'Nuclear medicine'),
+(32, 'Obstetrics and gynecology'),
+(33, 'Occupational medicine'),
+(34, 'Ophthalmology'),
+(35, 'Orthopaedics'),
+(36, 'Otorhinolaryngology'),
+(37, 'Paediatric surgery'),
+(38, 'Paediatrics'),
+(39, 'Pathology'),
+(40, 'Pharmacology'),
+(41, 'Physical medicine and rehabilitation'),
+(42, 'Plastic surgery'),
+(43, 'Podiatric Medicine'),
+(44, 'Podiatric Surgery'),
+(45, 'Psychiatry'),
+(46, 'Public health and Preventive Medicine'),
+(47, 'Radiology'),
+(48, 'Radiotherapy'),
+(49, 'Respiratory medicine'),
+(50, 'Rheumatology'),
+(51, 'Stomatology'),
+(52, 'Thoracic surgery'),
+(53, 'Tropical medicine'),
+(54, 'Urology'),
+(55, 'Vascular surgery'),
+(56, 'Venereology');
 
 -- --------------------------------------------------------
 
@@ -146,7 +201,7 @@ INSERT INTO `webuser` (`email`, `usertype`) VALUES
 ('admin@edoc.com', 'a'),
 ('doctor@edoc.com', 'd'),
 ('patient@edoc.com', 'p'),
-
+('emhashenudara@gmail.com', 'p');
 
 --
 -- Indexes for dumped tables
@@ -226,4 +281,9 @@ ALTER TABLE `patient`
 ALTER TABLE `schedule`
   MODIFY `scheduleid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
 
